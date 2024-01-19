@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Goof Troop Dublado" content="Voice Pack para o Goof Troop (SNES)">
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goof Troop Dublado (SNES)</title>  
+
+<body>
+
+
+        <!-- Sobreposição -->
+        <div id="overlay" class="overlay"></div>
+
+    <div id="popup" class="popup" style="display: none;">
+        <!-- Conteúdo da sua popup -->
+        <div class="popup-content">
+            
+            <div class="fb-page" data-href="https://www.facebook.com/OfficialRetroDub" data-tabs="timeline" data-width="300" data-height="150" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+            <!-- Botão de fechar -->
+            <button class="fechar-popup" onclick="fecharPopup()">X</button>
+        </div>
+    </div>
+
+    <div id="YoutubePopUp" class="popup" style="display: none;">
+        <!-- Conteúdo da sua popup -->
+        <div class="popup-content">
+            
+            
+            <img id="popupImage" width="80" height="80" src="src/RetroDubChannel.png" alt="Imagem RetroDubChannel">
+            <button id="subscribeButton" style="position: relative; top: -60px; left: 10px;" data-translate="SubscribeButton" ></button>
+
+            <!-- Botão de fechar -->
+            <button class="fechar-popup" onclick="fecharPopup()">X</button>
+        </div>
+    </div>
+
+    <div id="TwitterPopUp" class="popup" style="display: none;">
+        <!-- Conteúdo da sua popup -->
+        <div class="popup-content">
+            <p style="color: #000; font-size: 16px;" data-translate="TwitterMessage"></p>
+            <a class="twitter-follow-button"
+               href="https://twitter.com/RetroDubOficial"
+               data-size="large"
+               data-show-count="false">
+               Seguir @SilentFandub
+            </a>
+    
+            <!-- Botão de fechar -->
+            <button class="fechar-popup" onclick="fecharPopup()">X</button>
+        </div>
+    </div>
+
+  
+
+
+    <div>
+        <img id="img-pt" onclick="alterarIdiomaParaPortugues()" src="src/pt-br.png" alt="Português" style="cursor: pointer;">
+        <img id="img-en" onclick="alterarIdiomaParaIngles()" src="src/en-us.png" alt="English" style="cursor: pointer;">
+      </div>
+
+
+
+
+
+      <div class="content-container">
+        <header>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger" style="position: absolute;" >
+                <span></span>
+                <span></span>
+                <span></span>
+             </label>
+            <nav class="left-menu">
+              <ul>
+                  <li><a href="index.html"data-translate="TitleHome"><br><br></a></li>
+                  <li><a href="index.html#projects" data-translate="TitleProjects"><br><br><br><br><br>&nbsp;</a></li>
+                  <li><a href="index.html#about" data-translate="TitleAbout"><br><br></a></li>
+                  <li><a href="index.html#download"data-translate="TitleDownload"><br><br></a></li>
+                  <li><a href="index.html#donate"data-translate="TitleDonate"><br><br></a></li>
+                  <li><a href="#"data-translate="TitleTutorial"><br><br></a></li>
+                </ul>
+            </nav>
+            <nav class="right-menu">
+                <ul>
+                  <li><a href="https://www.facebook.com/OfficialRetroDub" target="_blank"> <img id="icon-face" src="src/icon-facebook.png"  width="35" height="35" style="cursor: pointer;"></a></li>
+                  <li><a href="https://www.instagram.com/retrodubofficial/" target="_blank"><img id="icon-instagram" src="src/icon-instagram.png" width="35" height="35"  style="cursor: pointer;"></a></li>
+                  <li><a href="https://twitter.com/RetroDubOficial" target="_blank"><img id="icon-twitter" src="src/icon-twitter.png" width="35" height="35"  style="cursor: pointer;"></a></li>
+                  <li><a href="https://www.youtube.com/@RetroDubOfficial" target="_blank"><img id="icon-youtube" src="src/icon-youtube.png" width="35" height="35"   style="cursor: pointer;"></a></li>
+                  <div class="g-ytsubscribe" data-channel="Shfandub" data-layout="full" data-count="default"></div>
+                </ul>
+              </nav>
+    </header>
+
+</div>  
+
+
+
+
+  
+
+    <div class="container">
+        
+        <h1>Goof Troop Dublado (SNES)</h1>
+        <img src="src/Goof.png" class="logo" style="width: 35%; height: 35%;">
+        <div class="tabs">
+            <div class="tab" onclick="openTab('tab1')" data-translate="ButtonInfo"></div>
+            <div class="tab" onclick="openTab('tab2')" data-translate="ButtonCredits"></div>
+            <div class="tab" onclick="openTab('tab3')" data-translate="ButtonVideos"></div>
+            <div class="tab" onclick="openTab('tab4')" data-translate="ButtonDownload"></div>
+
+        </div>
+        <br> </br>
+        <a class="twitter-follow-button"
+   href="https://twitter.com/SilentFandub"
+   data-size="large"
+   data-show-count="false">
+    Seguir @SilentFandub
+</a>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <div class="tab-content" id="tab1">
+            <!-- Conteúdo da Aba 1 -->
+            <!-- Pode ser o conteúdo existente ou algo diferente -->
+            <br> </br>
+            <p>É uma dublagem que não se limita apenas nas Cutscenes do jogo, foram adicionadas vozes em diversas situações do jogo, como por exemplo:</p>
+
+            <ul>
+                <li>Quando o jogador derrotar certos inimigos</li>
+                <li>Quando o jogador levar dano</li>
+                <li>Quando o jogador acerta o outro jogador por engano (ou não)</li>
+                <li>Quando alguma porta é destrancada</li>
+                <li>Quando é encontrado algum item importante</li>
+                <li>Quando está em alguma parte específica da fase</li>
+                <li>E diversas outras situações.</li>
+            </ul>
+            <br> </br>
+    
+            <p>Ao jogar em Coop terá uma experiência ainda maior em relação à dublagem, pois em alguns momentos do jogo o Pateta e Max irão se interagir.</p>
+    
+            <p>A dublagem irá funcionar em todas as versões do jogo:</p>
+    
+            <code>Goof Troop (USA): BB6A1198E291C8AE58E9581A4296ED4D</code>
+            <code>Goof Troop (Europe): 66688D31555ECFEAB50D810BBDC85D0B</code>
+            <code>Goof Troop (France): 29E2EE08C6B7C1A89A720D7291F76E58</code>
+            <code>Goof Troop (Germany): 3000077578BE5FD29B3903F00E83FB8E</code>
+            <code>Goofy to Max - Kaizoku-jima no Daibouken (Japan): 62F678F5679A1DAF6DA4C72C7E38CD29</code>
+            <br> </br>
+    
+            <p>Na versão japonesa haverá algumas pequenas diferenças na dublagem em algumas cenas pois o tempo das cenas na versão japonesa é menor do que nas demais versões.</p>
+    
+            <p>A dublagem também irá funcionar em todas as traduções de fãs.</p>
+    
+            <p>Quanto às versões Hacks não é aconselhável jogar com a dublagem pois muitas hacks alteram inimigos, fases, etc, o que certamente fará ficar incompatível com a dublagem. Caso tenha muitos pedidos, pode ser que seja criada uma versão da dublagem especificamente para alguma hack.</p>
+    
+            <p><strong>Observação:</strong> Load States são compatíveis, porém pode ser que seja ouvido o som de algum inimigo sendo derrotado assim que o Load State for carregado.</p>
+    <p> Evite carregar savestates antes da dublagem ser validada no RetroDub.</p>
+    <br> </br>
+            <p>Encontrou algum bug? Envie um e-mail para <a href="mailto:contact.retrodub@gmail.com">contact.retrodub@gmail.com</a> se possível com evidências para que o bug seja resolvido em futuras versões.</p>
+            <br> </br>
+            
+        </div>
+
+
+        <div class="tab-content2" id="tab2">
+            <br> </br>
+            <!-- Conteúdo da Aba 2 -->
+            <h2>CRÉDITOS:</h2>
+            <br> </br>
+    
+        <p class="bold">DUBLAGEM:</p>
+        <p>Silent Fandub</p>
+    
+        <p class="bold">Direção:</p>
+        <p>Sonderhen</p>
+        <br> </br>
+    
+    
+        <h2>ELENCO:</h2>
+        <br> </br>
+        <p class="bold">Pateta:</p>
+        <p>Filipi Ghedin</p>
+    
+        <p class="bold">Max:</p>
+        <p>Caroly</p>
+    
+        <p class="bold">Bafo:</p>
+        <p>Dona Stacy</p>
+    
+        <p class="bold">BJ:</p>
+        <p>Dona Stacy</p>
+    
+        <p class="bold">Piratas:</p>
+        <p>Horieber Oliveira e Dona Stacy</p>
+    
+        <p class="bold">Fire Bug:</p>
+        <p>Horieber Oliveira</p>
+    
+        <p class="bold">Esqueleto:</p>
+        <p>Horieber Oliveira</p>
+    
+        <p class="bold">Islander:</p>
+        <p>Horieber Oliveira</p>
+    
+        <p class="bold">Narração:</p>
+        <p>Bruno Shinkou (GuitarDreamer)</p>
+        
+        </div>
+        </div>
+
+        <div class="tab-content" id="tab3">
+            <!-- Conteúdo da Aba 3 -->
+            <br> </br>
+            <br> </br>
+            <div class="video-carousel">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WMpfFZZMI54?si=kJczTB3_EqKIg75b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br> </br>
+        <br> </br>
+        <div class="video-carousel">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WMpfFZZMI54?si=kJczTB3_EqKIg75b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+
+    <div class="tab-content" id="tab4">
+        <!-- Conteúdo da Aba 4 -->
+        <br> </br>
+        <div class="tabs" style="position: absolute; top: 150; left: 0; width: 100%; display: flex; flex-direction: column; align-items: center; z-index: 1;">
+            <!-- Adicione o conteúdo da aba 4 aqui -->
+
+            <a class="tab" onclick="fazerDownload('123.smc')" style="position: relative; display: flex; align-items: center;">
+                <img src="src/DownloadIcon.png" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span id="ButtonDownloadText" data-translate="DownloadGoofTroopDublado"></span>
+            </a>
+            <p style="color: white; font-size: 16px; margin-top: 20px; display: inline-block;">
+                <span><strong data-translate="InfoSize"></strong> 25MB</span>             
+              </p>
+              <p style="color: white; font-size: 14px; margin-top: -20px; display: inline-block;"></p>
+              <span><strong data-translate="InfoVersion"></strong> 1.0</span>
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function openTab(tabName) {
+            // Oculta todos os conteúdos das abas
+            var tabContents = document.querySelectorAll('.tab-content, .tab-content2');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = 'none';
+            }
+
+            // Remove a classe 'selected' de todas as abas
+            var tabs = document.querySelectorAll('.tabs .tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('selected');
+            }
+
+            // Exibe o conteúdo da aba clicada
+            document.getElementById(tabName).style.display = 'block';
+
+            // Adiciona a classe 'selected' à aba clicada
+            document.querySelector('.tabs .tab[onclick="openTab(\'' + tabName + '\')"]').classList.add('selected');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Carregar a primeira aba assim que a página carregar
+            openTab('tab1');
+        });
+    </script>
+
+
+
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+       
+
+
+
+
+
+
+<footer>
+    <p style="color: white; font-size: 16px; margin-top: 20px; margin-left: 50px; display: inline-block;">
+        <span><strong data-translate="SHARE"></strong></span>
+      </p>
+    <div class="social_container">
+        <ul class="socials">
+            <li>
+
+                
+             </li>
+           <li class="facebook">
+              <a id="facebookLink" href="#" target="_blank"><img alt="facebook" src="src/facebook.jpg"></a>
+           </li>
+           <li class="twitter">
+              <a id="twitterLink" href="#" target="_blank"><img alt="twitter" src="src/twitter.jpg"></a>
+           </li>
+           <li class="pinterest">
+            <a id="pinterestLink" href="#" target="_blank"><img alt="pinterest" src="src/pinterest.jpg"></a>
+         </li>
+        </ul>
+     </div>
+  </footer>
+
+  <script src="scripts/translate.js"></script>
+<script src="scripts/atualUrl.js"></script>
+<script src="scripts/socialpopup.js"></script>
+<script src="scripts/blockcontent.js"></script>
+<script src="scripts/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+
+
+
+
+</body>
+</html>

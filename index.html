@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="RetroDub" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="icon" href="src/favicon.ico" type="x-icon">
+  <title>RetroDub</title>
+
+
+
+  <!-- Headers de segurança -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-seu_nonce'; style-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY"> -->
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+        <!-- linkando os arquivos Owl Carousel 2 css -->
+        <link rel="stylesheet" href="src/owl.carousel.min.css">
+        <link rel="stylesheet" href="src/owl.theme.default.min.css">
+
+<body>
+
+  <!-- Adicione imagens para alternar entre idiomas -->
+  <div>
+    <img id="img-pt" onclick="alterarIdiomaParaPortugues()" src="src/pt-br.png" alt="Português" style="cursor: pointer;">
+    <img id="img-en" onclick="alterarIdiomaParaIngles()" src="src/en-us.png" alt="English" style="cursor: pointer;">
+  </div>
+
+  <div class="content-container">
+
+    <header>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger" style="position: absolute;" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="left-menu">
+        <ul>
+            <li><a href="#"data-translate="TitleHome"><br><br></a></li>
+            <!-- <li class="submenu" data-translate> -->
+              <li><a href="#projects" data-translate="TitleProjects"><br><br><br><br><br>&nbsp;</a></li>
+                <!-- <ul>
+              <li>
+                <a href="#">SNES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <ul class="third-level-submenu">
+                  <li><a href="#">Silent Hill 2 Dublado</a></li>
+                  <li><a href="#">Jogo 2</a></li>
+                  <li><a href="#">Silent Hill 2 Dublado</a></li>
+                  <li><a href="#">Jogo 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">GBA</a>
+                <ul class="third-level-submenu">
+                  <li><a href="#">Silent Hill 2 Dublado</a></li>
+                  <li><a href="#">Jogo 2</a></li>
+                  <li><a href="#">Silent Hill 2 Dublado</a></li>
+                  <li><a href="#">Jogo 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Nintendo 64</a>
+                <ul class="third-level-submenu">
+                  <li><a href="#">Silent Hill 2 Dublado</a></li>
+                  <li><a href="#">Jogo 2</a></li>
+                  <li><a href="#">Silent Hill 2 Dublado</a></li>
+                  <li><a href="#">Jogo 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">PSX</a></li>
+            </ul> -->
+          
+          <li><a href="#about" data-translate="TitleAbout"><br><br></a></li>
+          <li><a href="#download"data-translate="TitleDownload"><br><br></a></li>
+          <li><a href="#donate"data-translate="TitleDonate"><br><br></a></li>
+          <li><a href="#"data-translate="TitleTutorial"><br><br></a></li>
+        </ul>
+      </nav>
+      <!-- ... (seu menu direito) ... -->
+
+      <nav class="right-menu">
+        <ul>
+          <li><a href="https://www.facebook.com/OfficialRetroDub" target="_blank"> <img id="icon-face" src="src/icon-facebook.png"  width="35" height="35" style="cursor: pointer;"></a></li>
+          <li><a href="https://www.instagram.com/retrodubofficial/" target="_blank"><img id="icon-instagram" src="src/icon-instagram.png" width="35" height="35"  style="cursor: pointer;"></a></li>
+          <li><a href="https://twitter.com/RetroDubOficial" target="_blank"><img id="icon-twitter" src="src/icon-twitter.png" width="35" height="35"  style="cursor: pointer;"></a></li>
+          <li><a href="https://www.youtube.com/@RetroDubOfficial" target="_blank"><img id="icon-youtube" src="src/icon-youtube.png" width="35" height="35"   style="cursor: pointer;"></a></li>
+        </ul>
+      </nav>
+
+    <!-- Conteúdo principal vai aqui -->
+
+  </div>
+
+ 
+
+  <main>
+    <img src="src/123.png" class="logo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+    <!-- Outro conteúdo principal vai aqui -->
+    <section id="mais-conteudo" style="display: flex; justify-content: center; align-items: flex-end; height: 2vh; margin-bottom: 10px;">
+      <a href="#projects">
+        <img src="src/arrow.png" class="logo2"  alt="Mais Conteúdo">
+      </a>
+    </section>
+  </main>
+  
+
+<br>
+
+</br>
+
+<br>
+
+</br>
+<br>
+
+</br>
+<br>
+
+</br>
+<center>
+
+  <section id="projects">
+<h1 data-translate="TitleProjects"></h1data-translate>>PROJETOS:</h1>
+</center>
+
+<div class="carousel-projects">
+  <div class="owl-carousel owl-theme">
+      <div class="item">
+          <a href="goof-troop-dublado.html">
+              <img class="box-projects" src="src/goofcover.png"  alt="" srcset="">
+          </a>
+      </div>
+
+        <div class="item">
+            <img class="box-projects" src="src/soon.png" alt="" srcset="">
+            <div class="text-over-image" data-translate="Em Breve">Em Breve</div>
+        </div>
+        <div class="item">
+            <img class="box-projects" src="src/soon.png" alt="" srcset="">
+            <div class="text-over-image" data-translate="Em Breve">Em Breve</div>
+        </div>
+        <div class="item">
+            <img class="box-projects" src="src/soon.png" alt="" srcset="">
+            <div class="text-over-image" data-translate="Em Breve">Em Breve</div>
+        </div>
+        <div class="item">
+            <img class="box-projects" src="src/soon.png" alt="" srcset="">
+            <div class="text-over-image" data-translate="Em Breve">Em Breve</div>
+        </div>
+    </div>        
+</div>
+</section>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<section id="mais-conteudo" style="display: flex; justify-content: center; align-items: flex-end; height: 10vh; margin-bottom: 10px;">
+  <a href="#about">
+    <img src="src/arrow.png" class="logo2" alt="Mais Conteúdo">
+  </a>
+</section>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+
+<center>
+<section id="about">
+  <h1 data-translate="TitleAbout"></h1></h1>
+  <br> </br>
+
+
+  <div class="faq-container">
+    <div class="faq-item">
+        <h2 data-translate="AboutTitle1"></h2>
+        <p class="question"data-translate="AboutAnswer1"></p></p>
+
+      </div>
+
+    <div class="faq-item">
+      <h2 data-translate="AboutTitle2"></h2>
+      <p class="question"data-translate="AboutAnswer2"></p></p>
+    </div>
+
+    <div class="faq-item">
+      <h2 data-translate="AboutTitle3"></h2>
+      <p class="question"data-translate="AboutAnswer3"></p></p>
+    </div>
+
+    <div class="faq-item">
+      <h2 data-translate="AboutTitle4"></h2>
+      <p class="question"data-translate="AboutAnswer4"></p></p>
+    </div>
+
+    <div class="faq-item">
+      <h2 data-translate="AboutTitle5"></h2>
+      <p class="question"data-translate="AboutAnswer5"></p></p>
+    </div>
+</div>
+
+
+<br> </br>
+<br> </br>
+<section id="download">
+  <h1 data-translate="TitleDownload"></h1></h1>
+  <br> </br>
+  <br> </br>
+
+
+  <div style="position: relative;">
+    <img src="src/purpleBG.png" class="logo2" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;">
+  
+    <div class="tabs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; z-index: 1;">
+  
+      <img src="src/WindowsIcon.png" style="width: 65px; height: 65px; margin-bottom: 25px;">
+
+      <a class="tab" onclick="fazerDownload('123.smc')" style="position: relative; display: flex; align-items: center;">
+        <img src="src/DownloadIcon.png" style="width: 20px; height: 20px; margin-right: 5px;">
+        <span id="ButtonDownloadText" data-translate="ButtonDownloadRetroDub"></span>
+      </a>
+<!-- Texto abaixo da aba -->
+<p style="color: white; font-size: 16px; margin-top: 20px; display: inline-block;">
+  <span><strong data-translate="InfoSize"></strong> 6MB</span>
+</p>
+<p style="color: white; font-size: 16px; margin-top: -20px; display: inline-block;"></p>
+  <span><strong data-translate="InfoVersion"></strong> 0.75</span>
+</p>
+
+
+
+    </div>
+  </div>
+</section>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<section id="donate">
+  <h1 data-translate="TitleDonate"></h1></h1>
+  <br> </br>
+  <div class="faq-item">
+    <p class="question"data-translate="Donate1"></p></p>
+    <p class="question"data-translate="Donate2"></p></p>
+    <p class="question"><strong data-translate="Donate3"></strong></p>
+  </div>
+  <br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+
+
+</center>
+
+
+
+    <!-- linkando os arquivos Owl Carousel 2 js -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/setup.js"></script>
+    <script src="scripts/blockcontent.js"></script>
+    <script src="scripts/translate.js"></script>
+    <script src="scripts/atualUrl.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="scripts/checksum.js"></script>
+    
+
+    
+    <br> </br>
+    <br> </br>
+    <br> </br>
+    <br> </br>
+
+  <footer>
+    RetroDub
+  </footer>
+
+</body>
+</html>

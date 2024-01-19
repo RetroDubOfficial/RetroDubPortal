@@ -1,0 +1,488 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0710;
+      color: white;
+      font-family: Arial, sans-serif;
+      
+      
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 20px;
+  }
+
+
+
+/* Estilo para o botão de fechar */
+.fechar-popup {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ddd;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  z-index: 999; /* Z-index alto para garantir que fique sobre o conteúdo */
+  display: none; /* Inicialmente esconde a sobreposição */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff; /* Cor de fundo da popup */
+  padding: 20px;
+  z-index: 1000; /* Z-index maior que a sobreposição */
+  display: none; /* Inicialmente esconde a popup */
+}
+
+
+
+  .faq-container {
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5; /* Aumentado o espaço entre as linhas */
+}
+
+.answer {
+
+  font-weight:normal;
+  line-height: 1.5; /* Aumentado o espaço entre as linhas */
+}
+
+  ul {
+      text-align: left;
+      margin-bottom: 20px;
+  }
+
+  ul li {
+      font-size: 18px;
+      margin-bottom: 8px;
+  }
+
+  .bold {
+      font-weight: bold;
+      font-size: 18px;
+  }
+  
+    .content-container {
+      max-width: 1200px; /* ou outro valor desejado */
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      border-left: 15vw solid #0d0710;
+      border-right: 15vw solid #0d0710;
+      text-align: center;
+      color: white;
+  }
+  
+    header {
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .left-menu, .right-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    code {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #0d0710;
+      color: #ffffff;
+      overflow-x: auto;
+      font-size: 16px;
+      font-weight: bold;
+  }
+
+  .video-carousel {
+      margin-top: 20px;
+      display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+  .video-carousel iframe {
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #251353;
+    color: white;
+    margin: 0 10px;
+}
+
+.tabs .tab.selected {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #452694;
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    font-size: 18px;
+    text-align: left;
+}
+
+.tab-content2 {
+  display: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.tab:hover {
+    color: #ffffff; /* Cor quando o mouse passa sobre a aba */
+    font-weight: bold; /* Texto em negrito quando o mouse passa sobre a aba */
+}
+  
+    footer {
+      background-color: #0d0710;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;    
+
+    }
+
+  
+    .left-menu ul, .right-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+  
+    .left-menu li, .right-menu li {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  
+    .left-menu a, .right-menu a {
+      text-decoration: none;
+      color: white;
+      transition: font-weight 0.3s;
+    }
+  
+    .left-menu li:hover a, .right-menu li:hover a {
+      font-weight: bold;
+    }
+  
+    .submenu {
+      position: relative;
+    }
+  
+    .submenu ul {
+      display: none;
+      position: absolute;
+      background-color: black;
+      padding: 10px;
+      z-index: 7;
+      top: 88px;
+      left: 0;
+      right: 0;
+      width: 200px;
+      line-height: 1.5;
+    }
+  
+    .submenu:hover > ul,
+    .submenu ul:hover {
+      display: block;
+    }
+  
+    .submenu ul li:hover .third-level-submenu {
+      display: block;
+    }
+  
+    .submenu ul li {
+      margin-bottom: 15px;
+      position: relative;
+    }
+  
+    .submenu .third-level-submenu {
+      display: none;
+      position: absolute;
+      background-color: black;
+      padding: 10px;
+      z-index: 6;
+      top: 0;
+      left: 130%;
+      width: max-content;
+      line-height: 1.5;
+    }
+  
+    .submenu ul li:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 110%;
+      height: 110%;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.15);
+      z-index: -1;
+    }
+  
+    .submenu::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      bottom: 0;
+      width: 10px;
+      visibility: hidden;
+    }
+  
+    .submenu:hover::after {
+      visibility: visible;
+    }
+  
+    .submenu:hover > ul,
+    .submenu ul:hover {
+      display: block;
+    }
+  
+    .submenu ul li:hover .third-level-submenu {
+      display: block;
+      left: 100%;
+      top: 0;
+    }
+  
+    .submenu ul li {
+      margin-bottom: 15px;
+      position: relative;
+    }
+  
+    .third-level-submenu {
+      display: none;
+      position: absolute;
+      background-color: black;
+      padding: 10px;
+      z-index: 6;
+      top: 0;
+      left: 100%;
+      width: max-content;
+      line-height: 1.5;
+    }
+  
+    .submenu ul li:hover .third-level-submenu {
+      display: block;
+      left: 118%;
+    }
+  
+    /* Estilo corrigido para ocultar o cabeçalho quando a classe lang-en é exibida */
+    .lang-en .content-container header {
+      display: none;
+    }
+
+    .box-projects {
+      height: 540px;
+  max-width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.carousel-projects {
+  margin-top: 5px;
+
+    overflow: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+.text-over-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Cor do texto */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte, se necessário */
+}
+
+/* Social Share */
+ul.socials {
+  margin-top: 10px;
+  float: right;
+  
+ }
+ 
+ ul.socials li {
+  display: inline-block;
+ }
+ 
+ ul.socials li span {
+  font-size: 13px;
+  margin-right: 10px;
+ }
+ 
+  
+    /* Adicionando o estilo do menu móvel */
+  
+
+
+
+
+
+  
+    /* Criando o ícone do hambúrguer */
+    .hamburger {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      cursor: pointer;
+      position: fixed; /* Adicionando posição fixa para manter o ícone no centro da tela */
+  top: 6%; /* Ajustando a posição vertical para o centro */
+  left: 50%; /* Ajustando a posição horizontal para o centro */
+  transform: translate(-50%, -50%); /* Movendo o ícone para o centro usando transform */
+  z-index: 10; /* Certificando-se de que o ícone esteja acima do conteúdo da página */
+    }
+  
+    .hamburger span {
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      align-content: center;
+      align-items: center;
+      border-radius: 2px;
+    }
+  
+    /* Adicionando a caixa de seleção oculta para controlar a visibilidade do menu */
+    #menu-toggle {
+      display: none;
+    }
+  
+    /* Mostrando o menu quando a caixa de seleção está marcada */
+    #menu-toggle:checked ~ .left-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: black;
+      z-index: 5;
+    }
+  
+    /* Alterando o estilo dos itens do menu quando a caixa de seleção está marcada */
+    #menu-toggle:checked ~ .left-menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #menu-toggle:checked ~ .left-menu li {
+      margin: 10px 0;
+    }
+  
+    #menu-toggle:checked ~ .left-menu a {
+      font-size: 20px;
+    }
+
+        @media screen and (max-width: 768px) {
+      .left-menu, .right-menu {
+        display: none;
+      }
+
+    }
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 968px) {
+  .logo2 {
+    display: none;
+  }
+
+}
+
+        @media screen and (max-width: 768px) {
+          .logo2 {
+            display: none;
+          }
+        
+        }
+
+        @keyframes bounceAnimation {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px); /* Ajuste a altura desejada */
+          }
+        }
+      
+        #mais-conteudo img {
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          animation: bounceAnimation 1.5s infinite;
+        }
+
+
+  
+    
+  
