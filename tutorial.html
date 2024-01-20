@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Goof Troop Dublado" content="Voice Pack para o Goof Troop (SNES)">
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goof Troop Dublado (SNES)</title>  
+
+
+    
+
+    <body>
+
+
+        <!-- Sobreposição -->
+        <div id="overlay" class="overlay"></div>
+
+    <div id="popup" class="popup" style="display: none;">
+        <!-- Conteúdo da sua popup -->
+        <div class="popup-content">
+            
+            <div class="fb-page" data-href="https://www.facebook.com/OfficialRetroDub" data-tabs="timeline" data-width="300" data-height="150" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+            <!-- Botão de fechar -->
+            <button class="fechar-popup" onclick="fecharPopup()">X</button>
+        </div>
+    </div>
+
+    <div id="YoutubePopUp" class="popup" style="display: none;">
+        <!-- Conteúdo da sua popup -->
+        <div class="popup-content">
+            
+            
+            <img id="popupImage" width="80" height="80" src="src/RetroDubChannel.png" alt="Imagem RetroDubChannel">
+            <button id="subscribeButton" style="position: relative; top: -60px; left: 10px;" data-translate="SubscribeButton" ></button>
+
+            <!-- Botão de fechar -->
+            <button class="fechar-popup" onclick="fecharPopup()">X</button>
+        </div>
+    </div>
+
+    <div id="TwitterPopUp" class="popup" style="display: none;">
+        <!-- Conteúdo da sua popup -->
+        <div class="popup-content">
+            <p style="color: #000; font-size: 16px;" data-translate="TwitterMessage"></p>
+            <a class="twitter-follow-button"
+               href="https://twitter.com/RetroDubOficial"
+               data-size="large"
+               data-show-count="false">
+               Seguir @SilentFandub
+            </a>
+    
+            <!-- Botão de fechar -->
+            <button class="fechar-popup" onclick="fecharPopup()">X</button>
+        </div>
+    </div>
+
+
+    <div>
+        <img id="img-pt" onclick="alterarIdiomaParaPortugues()" src="src/pt-br.png" alt="Português" style="cursor: pointer;">
+        <img id="img-en" onclick="alterarIdiomaParaIngles()" src="src/en-us.png" alt="English" style="cursor: pointer;">
+      </div>
+
+
+
+      <div class="content-container">
+        <header>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger" style="position: absolute;" >
+                <span></span>
+                <span></span>
+                <span></span>
+             </label>
+            <nav class="left-menu">
+              <ul>
+                  <li><a href="index.html"data-translate="TitleHome"><br><br></a></li>
+                  <li><a href="index.html#projects" data-translate="TitleProjects"><br><br><br><br><br>&nbsp;</a></li>
+                  <li><a href="index.html#about" data-translate="TitleAbout"><br><br></a></li>
+                  <li><a href="index.html#download"data-translate="TitleDownload"><br><br></a></li>
+                  <li><a href="index.html#donate"data-translate="TitleDonate"><br><br></a></li>
+                  <li><a href="#"data-translate="TitleTutorial"><br><br></a></li>
+                </ul>
+            </nav>
+            <nav class="right-menu">
+                <ul>
+                  <li><a href="https://www.facebook.com/OfficialRetroDub" target="_blank"> <img id="icon-face" src="src/icon-facebook.png"  width="35" height="35" style="cursor: pointer;"></a></li>
+                  <li><a href="https://www.instagram.com/retrodubofficial/" target="_blank"><img id="icon-instagram" src="src/icon-instagram.png" width="35" height="35"  style="cursor: pointer;"></a></li>
+                  <li><a href="https://twitter.com/RetroDubOficial" target="_blank"><img id="icon-twitter" src="src/icon-twitter.png" width="35" height="35"  style="cursor: pointer;"></a></li>
+                  <li><a href="https://www.youtube.com/@RetroDubOfficial" target="_blank"><img id="icon-youtube" src="src/icon-youtube.png" width="35" height="35"   style="cursor: pointer;"></a></li>
+                  <div class="g-ytsubscribe" data-channel="Shfandub" data-layout="full" data-count="default"></div>
+                </ul>
+              </nav>
+    </header>
+
+</div>  
+
+<div class="faq-container">
+    <div class="faq-item">
+        <h1 data-translate="TutorialTitle"></h1>
+        <br>
+        <h1 data-translate="TutorialTitle1"></h1>
+        <p class="question"data-translate="TutorialAnswer1-1"></p></p>
+        <p class="question"data-translate="TutorialAnswer1-2"></p></p>
+        <br>
+        <h1 data-translate="TutorialTitle2"></h2>
+        <h2 data-translate="TutorialTitle3"></h2>
+        <p class="question"data-translate="TutorialAnswer2"></p></p>
+        <h2 data-translate="TutorialTitle4"></h2>
+        <p class="question"data-translate="TutorialAnswer3"></p></p>
+        <br>
+        <br>
+      </div>
+
+      <div class="faq-item">
+        <h1 data-translate="ShortcutsTitle"></h1>
+        <br>
+        <h2 data-translate="Shortcuts1"></h2>
+        <p class="question"data-translate="ShortcutsAnswer1"></p></p>
+        <h2 data-translate="Shortcuts2"></h2>
+        <p class="question"data-translate="ShortcutsAnswer2"></p></p>
+        <br>
+        <p class="question"data-translate="ShortcutsAnswer3"></p></p>
+        <p class="question"data-translate="ShortcutsAnswer4"></p></p>
+        <br>
+        <br>
+      </div>
+
+      <div class="faq-item">
+        <h1 data-translate="PossibleErrosTitle"></h1>
+        <br>
+        <h2 data-translate="PossibleErros1"></h2>
+        <p class="question"data-translate="PossibleErrosAnswer1"></p></p>
+        <h2 data-translate="PossibleErros2"></h2>
+        <span class="question" data-translate="PossibleErrosAnswer2"></span> <a href="https://catalog.update.microsoft.com/search.aspx?q=kb4474419" target="_blank">link</a></p></p>   
+        <h2 data-translate="PossibleErros3"></h2>
+        <p class="question"data-translate="PossibleErrosAnswer3"></p></p>
+        <h2 data-translate="PossibleErros4"></h2>
+        <p class="question"data-translate="PossibleErrosAnswer4"></p></p>
+        <h2 data-translate="PossibleErros5"></h2>
+        <p class="question"data-translate="PossibleErrosAnswer5"></p></p>
+        <br>
+        <br>
+      </div>
+</div>
+
+
+<footer>
+    <p style="color: white; font-size: 16px; margin-top: 200px; margin-left: 50px; display: inline-block;">
+        <span><strong data-translate="SHARE"></strong></span>
+      </p>
+    <div class="social_container">
+        <ul class="socials">
+            <li>
+
+                
+             </li>
+           <li class="facebook">
+              <a id="facebookLink" href="#" target="_blank"><img alt="facebook" src="src/facebook.jpg"></a>
+           </li>
+           <li class="twitter">
+              <a id="twitterLink" href="#" target="_blank"><img alt="twitter" src="src/twitter.jpg"></a>
+           </li>
+           <li class="pinterest">
+            <a id="pinterestLink" href="#" target="_blank"><img alt="pinterest" src="src/pinterest.jpg"></a>
+         </li>
+        </ul>
+     </div>
+  </footer>
+
+
+  <script src="scripts/translate.js"></script>
+<script src="scripts/atualUrl.js"></script>
+<script src="scripts/socialpopup.js"></script>
+<script src="scripts/blockcontent.js"></script>
+<script src="scripts/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<script src="scripts/tabcontrol.js"></script>
+
+
+
+
+</body>
+</html>

@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goof Troop Dublado (SNES)</title>  
 
-<body>
+
+    
+
+    <body>
 
 
         <!-- Sobreposição -->
@@ -52,15 +55,11 @@
         </div>
     </div>
 
-  
-
 
     <div>
         <img id="img-pt" onclick="alterarIdiomaParaPortugues()" src="src/pt-br.png" alt="Português" style="cursor: pointer;">
         <img id="img-en" onclick="alterarIdiomaParaIngles()" src="src/en-us.png" alt="English" style="cursor: pointer;">
       </div>
-
-
 
 
 
@@ -79,7 +78,7 @@
                   <li><a href="index.html#about" data-translate="TitleAbout"><br><br></a></li>
                   <li><a href="index.html#download"data-translate="TitleDownload"><br><br></a></li>
                   <li><a href="index.html#donate"data-translate="TitleDonate"><br><br></a></li>
-                  <li><a href="#"data-translate="TitleTutorial"><br><br></a></li>
+                  <li><a href="tutorial.html"data-translate="TitleTutorial"><br><br></a></li>
                 </ul>
             </nav>
             <nav class="right-menu">
@@ -95,10 +94,6 @@
 
 </div>  
 
-
-
-
-  
 
     <div class="container">
         
@@ -246,53 +241,8 @@
     </div>
 
 
-
-    <script>
-        function openTab(tabName) {
-            // Oculta todos os conteúdos das abas
-            var tabContents = document.querySelectorAll('.tab-content, .tab-content2');
-            for (var i = 0; i < tabContents.length; i++) {
-                tabContents[i].style.display = 'none';
-            }
-
-            // Remove a classe 'selected' de todas as abas
-            var tabs = document.querySelectorAll('.tabs .tab');
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove('selected');
-            }
-
-            // Exibe o conteúdo da aba clicada
-            document.getElementById(tabName).style.display = 'block';
-
-            // Adiciona a classe 'selected' à aba clicada
-            document.querySelector('.tabs .tab[onclick="openTab(\'' + tabName + '\')"]').classList.add('selected');
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            // Carregar a primeira aba assim que a página carregar
-            openTab('tab1');
-        });
-    </script>
-
-
-
-<br> </br>
-<br> </br>
-<br> </br>
-<br> </br>
-<br> </br>
-<br> </br>
-<br> </br>
-<br> </br>
-       
-
-
-
-
-
-
 <footer>
-    <p style="color: white; font-size: 16px; margin-top: 20px; margin-left: 50px; display: inline-block;">
+    <p style="color: white; font-size: 16px; margin-top: 200px; margin-left: 50px; display: inline-block;">
         <span><strong data-translate="SHARE"></strong></span>
       </p>
     <div class="social_container">
@@ -314,12 +264,14 @@
      </div>
   </footer>
 
+
   <script src="scripts/translate.js"></script>
 <script src="scripts/atualUrl.js"></script>
 <script src="scripts/socialpopup.js"></script>
 <script src="scripts/blockcontent.js"></script>
 <script src="scripts/jquery.min.js"></script>
 <script src="https://apis.google.com/js/platform.js"></script>
+<script src="scripts/tabcontrol.js"></script>
 
 
 
