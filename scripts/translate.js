@@ -62,6 +62,7 @@ const traducoes = {
         'SubscribeButton': 'Inscreva-se',
         'TwitterMessage': 'Siga-nos no Twitter:',
         'DownloadGoofTroopDublado': 'Baixar Goof Troop Dublado',
+        'BugReport': 'Encontrou algum bug? Envie um e-mail para contact.retrodub@gmail.com se possível com evidências para que o bug seja resolvido em futuras versões.',
 
         'Este é o conteúdo da sua página.': 'Este é o conteúdo da sua página.'
         
