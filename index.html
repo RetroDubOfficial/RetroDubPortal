@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css">
   <link rel="icon" href="src/favicon.ico" type="x-icon">
+  <meta property="og:title" content="RetroDub">
+  <meta property="og:image" content="URL_DA_SUA_IMAGEM">
   <title>RetroDub</title>
+  
+
 
 
 
@@ -24,7 +28,7 @@
 
   
 
-  <!-- Adicione imagens para alternar entre idiomas -->
+  <!-- Clicar na imagem para selecionar o idioma -->
   <div>
     <img id="img-pt" onclick="alterarIdiomaParaPortugues()" src="src/pt-br.png" alt="Português" style="cursor: pointer;">
     <img id="img-en" onclick="alterarIdiomaParaIngles()" src="src/en-us.png" alt="English" style="cursor: pointer;">
@@ -41,45 +45,15 @@
       </label>
       <nav class="left-menu">
         <ul>
-            <li><a href="#"data-translate="TitleHome"><br><br></a></li>
-            <!-- <li class="submenu" data-translate> -->
-              <li><a href="#projects" data-translate="TitleProjects"><br><br><br><br><br>&nbsp;</a></li>
-                <!-- <ul>
-              <li>
-                <a href="#">SNES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <ul class="third-level-submenu">
-                  <li><a href="#">Silent Hill 2 Dublado</a></li>
-                  <li><a href="#">Jogo 2</a></li>
-                  <li><a href="#">Silent Hill 2 Dublado</a></li>
-                  <li><a href="#">Jogo 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#">GBA</a>
-                <ul class="third-level-submenu">
-                  <li><a href="#">Silent Hill 2 Dublado</a></li>
-                  <li><a href="#">Jogo 2</a></li>
-                  <li><a href="#">Silent Hill 2 Dublado</a></li>
-                  <li><a href="#">Jogo 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Nintendo 64</a>
-                <ul class="third-level-submenu">
-                  <li><a href="#">Silent Hill 2 Dublado</a></li>
-                  <li><a href="#">Jogo 2</a></li>
-                  <li><a href="#">Silent Hill 2 Dublado</a></li>
-                  <li><a href="#">Jogo 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#">PSX</a></li>
-            </ul> -->
-          
+          <li><a href="#"data-translate="TitleHome"><br><br></a></li>
+          <li><a href="#projects" data-translate="TitleProjects"><br><br><br><br><br>&nbsp;</a></li>
           <li><a href="#about" data-translate="TitleAbout"><br><br></a></li>
           <li><a href="#download"data-translate="TitleDownload"><br><br></a></li>
           <li><a href="#donate"data-translate="TitleDonate"><br><br></a></li>
           <li><a href="tutorial.html"data-translate="TitleTutorial"><br><br></a></li>
         </ul>
       </nav>
-      <!-- ... (seu menu direito) ... -->
+
 
       <nav class="right-menu">
         <ul>
@@ -90,7 +64,7 @@
         </ul>
       </nav>
 
-    <!-- Conteúdo principal vai aqui -->
+
 
   </div>
 
@@ -98,7 +72,7 @@
 
   <main>
     <img src="src/123.png" class="logo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
-    <!-- Outro conteúdo principal vai aqui -->
+
     <section id="mais-conteudo" style="display: flex; justify-content: center; align-items: flex-end; height: 2vh; margin-bottom: 10px;">
       <a href="#projects">
         <img src="src/arrow.png" class="logo2"  alt="Mais Conteúdo">
@@ -251,8 +225,6 @@
 </center>
 
 
-
-    <!-- linkando os arquivos Owl Carousel 2 js -->
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/owl.carousel.min.js"></script>
     <script src="scripts/setup.js"></script>
