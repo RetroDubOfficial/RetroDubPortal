@@ -4,12 +4,12 @@ function verificarPopupFace() {
 
     // Se a popup do Facebook ainda não foi exibida, chame a função para carregar o SDK do Facebook
     if (!popupFace) {
-        console.log('Popup do Facebook ainda não exibida, carregando pela primeira vez.');
+        ConsoleLog('Popup do Facebook ainda não exibida, carregando pela primeira vez.');
 
         // Chame a função para carregar o SDK do Facebook
         carregarSDKFacebook();
     } else {
-        console.log('Popup do Facebook já exibida');
+        ConsoleLog('Popup do Facebook já exibida');
             // Chama a função para carregar o conteúdo do YouTube apenas se a popup do Facebook não foi exibida
             verificarEExibirPopupYoutube();
     }
@@ -19,10 +19,10 @@ function verificarPopupFace() {
 function carregarSDKFacebook() {
     // Inicialize o SDK do Facebook
     window.fbAsyncInit = function () {
-        console.log('SDK do Facebook inicializado');
+        ConsoleLog('SDK do Facebook inicializado');
 
         // Adicione este log para verificar se o elemento com ID 'popup' está presente
-        console.log('Elemento da popup:', document.getElementById('popup'));
+        ConsoleLog('Elemento da popup:', document.getElementById('popup'));
 
         // Chame a função para exibir a popup do Facebook
         exibirPopupFacebook();
@@ -47,7 +47,7 @@ function verificarEExibirPopupYoutube() {
         const popupYoutube = localStorage.getItem('popupYoutube');
         if (!popupYoutube) {
 
-            console.log('Exibindo popup do Youtube');
+            ConsoleLog('Exibindo popup do Youtube');
 
             // Exibe a sobreposição
             document.getElementById('overlay').style.display = 'block';
@@ -82,7 +82,7 @@ function verificarEExibirPopupYoutube() {
 
         } else {
 
-            console.log('PopUp Youtube já exibida');
+            ConsoleLog('PopUp Youtube já exibida');
             verificarEExibirPopupTwitter();
 
         }
@@ -97,7 +97,7 @@ function verificarEExibirPopupTwitter() {
         const popupTwitter = localStorage.getItem('popupTwitter');
         if (!popupTwitter) {
 
-            console.log('Exibindo popup do Twitter');
+            ConsoleLog('Exibindo popup do Twitter');
 
             // Exibe a sobreposição
             document.getElementById('overlay').style.display = 'block';
@@ -118,7 +118,7 @@ function verificarEExibirPopupTwitter() {
 
         } else {
 
-            console.log('PopUp Twitter já exibida');
+            ConsoleLog('PopUp Twitter já exibida');
 
         }
 
@@ -154,6 +154,13 @@ function fecharPopup() {
     document.getElementById('YoutubePopUp').style.display = 'none';
     document.getElementById('TwitterPopUp').style.display = 'none';
 }
+
+function ConsoleLog(mensagem) {
+    // Adicione suas regras ou lógica aqui
+    if (window.location.href.includes('8080')) {
+      console.log(mensagem);
+    } 
+  }
 
 // Chame a função para verificar se a popup do Facebook foi exibida
 verificarPopupFace();

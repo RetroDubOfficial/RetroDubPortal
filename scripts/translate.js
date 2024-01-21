@@ -134,22 +134,24 @@ const traducoes = {
 
 
 // Obtém o idioma do navegador
-const idiomaNavegador = obterIdiomaNavegador();
+var idiomaNavegador = obterIdiomaNavegador();
 
 
 // Verifica e define o idioma com base no navegador
 if (idiomaNavegador.startsWith("pt")) {
-    console.log('Idioma do navegador PT');
+    ConsoleLog(`Idioma do navegador: ${idiomaNavegador }:`);
 } else if (idiomaNavegador.startsWith("en")) {
-    console.log('Idioma do navegador EN');
+    ConsoleLog(`Idioma do navegador: ${idiomaNavegador }:`);
 } else {
+    ConsoleLog(`Idioma do navegador: ${idiomaNavegador }:`);
+    ConsoleLog('Navegador não está nos idiomas da lista');
     idiomaNavegador = 'en';
 }
 
 // Obtenha o idioma armazenado no Local Storage, caso não tenha irá pegar o idioma do navegador.
 const idiomaAtual = localStorage.getItem('idioma') || idiomaNavegador;
 
-console.log(`Idioma utilizado:  ${idiomaAtual }:`);
+ConsoleLog(`Idioma utilizado:  ${idiomaAtual }:`);
 
 // Chame a função para traduzir o conteúdo quando a página carregar
 document.addEventListener('DOMContentLoaded', () => {
@@ -198,3 +200,10 @@ function alterarIdiomaParaPortugues() {
     definirIdioma('pt-BR');
     traduzirConteudo('pt-BR');
 }
+
+function ConsoleLog(mensagem) {
+    // Adicione suas regras ou lógica aqui
+    if (window.location.href.includes('8080')) {
+      console.log(mensagem);
+    } 
+  }
