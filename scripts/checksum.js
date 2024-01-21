@@ -36,7 +36,7 @@ var checksumsPermitidos = {
           window.location.href = caminhoDoArquivo;
         } else {
           // O checksum não está na lista permitida, recusar o download
-          alert("O checksum do arquivo não é válido. O download foi recusado.");
+          // alert("O checksum do arquivo não é válido. O download foi recusado.");
         }
       })
       .catch(error => console.error("Erro ao fazer o download:", error));

@@ -152,7 +152,10 @@ align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-size: 15px;
 }
+
+
 
 .tab {
     cursor: pointer;
@@ -162,6 +165,7 @@ align-items: center;
     margin: 0 10px;
 }
 
+
 .tabs .tab.selected {
   cursor: pointer;
   padding: 10px 20px;
@@ -169,6 +173,7 @@ align-items: center;
   color: white;
   margin: 0 10px;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .tab-content {
@@ -466,6 +471,18 @@ ul.socials {
         
         }
 
+        @media (max-width: 600px) {
+          .tab {
+              padding: 10px 1%;
+              font-size: 8px;
+          }
+
+          .tabs .tab.selected {
+              padding: 10px 1%;
+              font-size: 8px;
+          }
+        }
+
         @keyframes bounceAnimation {
           0%, 100% {
             transform: translateY(0);
@@ -474,6 +491,8 @@ ul.socials {
             transform: translateY(-10px); /* Ajuste a altura desejada */
           }
         }
+
+
       
         #mais-conteudo img {
           width: 50px;
