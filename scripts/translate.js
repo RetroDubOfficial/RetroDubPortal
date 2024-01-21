@@ -150,6 +150,11 @@ const idiomaAtual = localStorage.getItem('idioma') || idiomaNavegador;
 
 console.log(`Idioma utilizado:  ${idiomaAtual }:`);
 
+// Chame a função para traduzir o conteúdo quando a página carregar
+document.addEventListener('DOMContentLoaded', () => {
+    traduzirConteudo(idiomaAtual);
+});
+
 // Função para obter o idioma do navegador
 function obterIdiomaNavegador() {
     return navigator.language || navigator.userLanguage;
@@ -177,10 +182,7 @@ function definirIdioma(idioma) {
 
 
 
-// Chame a função para traduzir o conteúdo quando a página carregar
-document.addEventListener('DOMContentLoaded', () => {
-    traduzirConteudo(idiomaAtual);
-});
+
 
 
 
