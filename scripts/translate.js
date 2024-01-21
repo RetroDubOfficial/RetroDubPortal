@@ -136,13 +136,14 @@ const traducoes = {
 // Obtém o idioma do navegador
 const idiomaNavegador = obterIdiomaNavegador();
 
+
 // Verifica e define o idioma com base no navegador
 if (idiomaNavegador.startsWith("pt")) {
     console.log('Idioma do navegador PT');
 } else if (idiomaNavegador.startsWith("en")) {
     console.log('Idioma do navegador EN');
 } else {
-    console.log('Idioma do navegador não obtido, definido para EN');
+    idiomaNavegador = 'en';
 }
 
 // Obtenha o idioma armazenado no Local Storage, caso não tenha irá pegar o idioma do navegador.
@@ -194,6 +195,6 @@ function alterarIdiomaParaIngles() {
 
 // Exemplo: Alterar idioma para português
 function alterarIdiomaParaPortugues() {
-    definirIdioma('pt-br');
-    traduzirConteudo('pt-br');
+    definirIdioma('pt-BR');
+    traduzirConteudo('pt-BR');
 }
