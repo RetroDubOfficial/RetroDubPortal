@@ -1,6 +1,6 @@
 // Defina sua lista de tradução para cada idioma
 const traducoes = {
-    'pt-br': {
+    'pt-BR': {
         'TitleAbout': 'SOBRE',
         'TitleTutorial': 'TUTORIAL',
         'TitleDownload': 'BAIXAR',
