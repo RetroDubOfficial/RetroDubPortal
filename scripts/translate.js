@@ -132,6 +132,29 @@ const traducoes = {
 
 };
 
+
+// Obtém o idioma do navegador
+const idiomaNavegador = obterIdiomaNavegador();
+
+// Verifica e define o idioma com base no navegador
+if (idiomaNavegador.startsWith("pt")) {
+    console.log('Idioma do navegador PT');
+} else if (idiomaNavegador.startsWith("en")) {
+    console.log('Idioma do navegador EN');
+} else {
+    console.log('Idioma do navegador não obtido, definido para EN');
+}
+
+// Obtenha o idioma armazenado no Local Storage, caso não tenha irá pegar o idioma do navegador.
+const idiomaAtual = localStorage.getItem('idioma') || idiomaNavegador;
+
+console.log(`Idioma utilizado:  ${idiomaAtual }:`);
+
+// Função para obter o idioma do navegador
+function obterIdiomaNavegador() {
+    return navigator.language || navigator.userLanguage;
+}
+
 // Função para traduzir uma string com base no idioma atual
 function traduzirString(str, idioma) {
     return traducoes[idioma] && traducoes[idioma][str] ? traducoes[idioma][str] : str;
@@ -144,26 +167,31 @@ function traduzirConteudo(idioma) {
     elementosTraduziveis.forEach(elemento => {
         const chave = elemento.dataset.translate;
         elemento.textContent = traduzirString(chave, idioma);
-
     });
 }
 
-// Obtenha o idioma armazenado no cookie (ou use um idioma padrão)
-const idiomaAtual = document.cookie.replace(/(?:(?:^|.*;\s*)idioma\s*=\s*([^;]*).*$)|^.*$/, '$1') || 'pt-br';
+// Função para definir o idioma
+function definirIdioma(idioma) {
+    localStorage.setItem('idioma', idioma);
+}
+
+
 
 // Chame a função para traduzir o conteúdo quando a página carregar
 document.addEventListener('DOMContentLoaded', () => {
     traduzirConteudo(idiomaAtual);
 });
 
+
+
 // Exemplo: Alterar idioma para inglês
 function alterarIdiomaParaIngles() {
-    document.cookie = 'idioma=en';
+    definirIdioma('en');
     traduzirConteudo('en');
 }
 
 // Exemplo: Alterar idioma para português
 function alterarIdiomaParaPortugues() {
-    document.cookie = 'idioma=pt-br';
+    definirIdioma('pt-br');
     traduzirConteudo('pt-br');
 }

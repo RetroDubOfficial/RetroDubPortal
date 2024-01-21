@@ -26,8 +26,8 @@
     cursor: pointer;
 }
 
-.centralizado {
-  margin-top: 50px; /* Ajuste conforme necessário */
+.disqusContent {
+  margin-top: 300px; /* Ajuste conforme necessário */
   max-width: 1000px; /* Defina a largura máxima desejada */
   margin-left: auto;
   margin-right: auto;

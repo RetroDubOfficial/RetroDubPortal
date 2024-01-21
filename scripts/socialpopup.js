@@ -131,7 +131,7 @@ function verificarEExibirPopupTwitter() {
 
 // Função para exibir a popup do Facebook
 function exibirPopupFacebook() {
-    console.log('Script iniciado');
+    // console.log('Script iniciado');
 
     // Exibe a sobreposição
     document.getElementById('overlay').style.display = 'block';
