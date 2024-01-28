@@ -33,7 +33,10 @@ function fazerDownload(nomeDoArquivo) {
 
           if (verificarChecksum(checksum)) {
               // O checksum está na lista permitida, permitir o download
-              window.location.href = caminhoDoArquivo;
+              var link = document.createElement('a');
+              link.href = caminhoDoArquivo;
+              link.download = nomeDoArquivo;
+              link.click();
           } else {
               // O checksum não está na lista permitida, recusar o download
               console.error("O checksum do arquivo não é válido. O download foi recusado.");
