@@ -4,6 +4,7 @@ var checksumsPermitidos = {
   "378071e554367848d358e86dcb9ef0846145fc87b82cde35d595b49bca1c1f1f": true,
   "3d4f2bf07dc1be38b20cd6e46949a107": true,
   "8f97850eae897ee5371bb9527786aee771178ef9d2cce6c0e2ef62ab0e1463b3": true,
+  "3b61b354c46ebc0244b49106a0a70fa399ff87592e49a14d4d7309fca21577a0": true,
   // Adicione mais checksums conforme necessário
 };
 
