@@ -34,11 +34,15 @@ function fazerDownload(nomeDoArquivo) {
 
           if (verificarChecksum(checksum)) {
               // O checksum está na lista permitida, permitir o download
-              var link = document.createElement('a');
-              link.href = caminhoDoArquivo;
-              link.download = nomeDoArquivo;
-              link.rel = 'noopener noreferrer';
-              link.click();
+              var blob = new Blob([buffer], { type: 'application/octet-stream' });
+              var url = window.URL.createObjectURL(blob);
+              var a = document.createElement('a');
+              a.href = url;
+              a.download = nomeDoArquivo;
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+              window.URL.revokeObjectURL(url);
           } else {
               // O checksum não está na lista permitida, recusar o download
               console.error("O checksum do arquivo não é válido. O download foi recusado.");
