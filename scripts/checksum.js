@@ -34,14 +34,23 @@ function fazerDownload(nomeDoArquivo) {
 
           if (verificarChecksum(checksum)) {
               // O checksum está na lista permitida, permitir o download
-              var blob = new Blob([buffer], { type: 'application/octet-stream' });
-              var url = window.URL.createObjectURL(blob);
-              var a = document.createElement('a');
-              a.href = url;
-              a.download = nomeDoArquivo;
-              document.body.appendChild(a);
-              a.click();
-              document.body.removeChild(a);
+              var diretorioDesejado = "/files/retrodub/";
+              var caminhoDoArquivo = diretorioDesejado + nomeDoArquivo;
+          
+              // Cria um link temporário
+              var link = document.createElement('a');
+              link.href = caminhoDoArquivo;
+              link.target = '_blank';
+              link.download = nomeDoArquivo;
+          
+              // Adiciona o link ao documento
+              document.body.appendChild(link);
+          
+              // Simula um clique no link para iniciar o download
+              link.click();
+          
+              // Remove o link do documento
+              document.body.removeChild(link);
               window.URL.revokeObjectURL(url);
           } else {
               // O checksum não está na lista permitida, recusar o download
