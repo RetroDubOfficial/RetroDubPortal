@@ -36,6 +36,7 @@ function fazerDownload(nomeDoArquivo) {
               var link = document.createElement('a');
               link.href = caminhoDoArquivo;
               link.download = nomeDoArquivo;
+              link.rel = 'noopener noreferrer';
               link.click();
           } else {
               // O checksum não está na lista permitida, recusar o download
