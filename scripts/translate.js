@@ -140,9 +140,10 @@ var idiomaNavegador = obterIdiomaNavegador();
 // Verifica e define o idioma com base no navegador
 if (idiomaNavegador.startsWith("pt")) {
     ConsoleLog(`Idioma do navegador: ${idiomaNavegador }:`);
-    idiomaNavegador = "pt-BR"
+    idiomaNavegador = "pt-BR";
 } else if (idiomaNavegador.startsWith("en")) {
     ConsoleLog(`Idioma do navegador: ${idiomaNavegador }:`);
+    idiomaNavegador = "en";
 } else {
     ConsoleLog(`Idioma do navegador: ${idiomaNavegador }:`);
     ConsoleLog('Navegador não está nos idiomas da lista');
