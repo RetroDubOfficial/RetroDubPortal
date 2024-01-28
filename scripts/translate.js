@@ -245,7 +245,7 @@ function verificarIdiomaECarregarPayPal() {
 
 function ConsoleLog(mensagem) {
     // Adicione suas regras ou lógica aqui
-    if (window.location.href.includes('8080')) {
+    // if (window.location.href.includes('8080')) {
       console.log(mensagem);
-    } 
+    // } 
   }
